@@ -1,0 +1,132 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  background-image: url("orange.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 69%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.calculator {
+  backdrop-filter: blur(5px);
+  background-color: #FFFFFF45;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 320px;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.calculator input {
+  backdrop-filter: blur(0px);
+  background-color: #FF8C001A;
+  box-shadow: 0px 0px 10px #FFBE5AB0;
+  width: 100%;
+  height: 60px;
+  margin-bottom: 20px;
+  color: #000000;
+  border: none;
+  border-radius: 10px;
+  text-align: right;
+  padding-right: 10px;
+  font-size: 24px;
+  box-sizing: border-box;
+}
+
+.calculator .buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.calculator .digit {
+  backdrop-filter: blur(0px);
+  background-color: #FF8C001A;
+  border: none;
+  box-shadow: 0px 0px 10px #FFBE5AB0;
+  border-radius: 10px;
+  height: 60px;
+  font-size: 24px;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.calculator .digit:hover {
+  background-color: #FFB357;
+}
+
+.calculator .digit:active {
+  background-color: #FFB357;
+}
+
+footer {
+  width: 100%;
+  backdrop-filter: blur(10px);
+  background-color: #FFFFFF40;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 10%;
+}
+
+footer a {
+  backdrop-filter: blur(0px);
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  background-color: #FFCB8D00;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+footer a:hover {
+  background-color: #555;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .calculator {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .calculator input {
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .calculator .digit {
+    height: 50px;
+    font-size: 20px;
+  }
+
+  footer a {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .calculator input {
+    height: 45px;
+    font-size: 18px;
+  }
+
+  .calculator .digit {
+    height: 45px;
+    font-size: 18px;
+  }
+
+  footer a {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}

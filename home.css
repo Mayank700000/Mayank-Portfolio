@@ -1,0 +1,287 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Jura', sans-serif;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to right, #000020, #003924);
+  color: #CACACA;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.pg1 {
+  display: flex;
+  flex-direction: column;
+}
+
+nav{
+  width: 100%;
+  height: 10vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+ }
+
+.leftnav {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.rightnav {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  position: absolute;
+  right: 2%;
+  font-size: 1.5rem;
+  animation: slideIn 1s forwards;
+  transition: transform 0.3s ease;
+}
+
+.menu:hover {
+  transform: scale(1.1);
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.logo {
+  height: 100%;
+  width: 15%;
+  background-image: url("logo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: fadeInOut 3s infinite;
+  margin-bottom: 2vw;
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.creater {
+  height: 100%;
+  width: 50%;
+}
+
+.created {
+  margin-top: 0.25rem;
+  font-size: 5px;
+  font-weight: 1;
+}
+
+.creatername {
+  font-size: 10px;
+  font-weight: 500;
+  color: #11F8C2;
+}
+
+.firstcontent {
+  margin-left: 2%;
+}
+
+.welcome {
+  margin-top: 30%;
+  font-size: 2.5em;
+  font-weight: 1000;
+  animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.name {
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin-top: 4%;
+  margin-left: 4%;
+  color: #11F8C2;
+}
+
+.devexp {
+  font-size: 0.60rem;
+  font-weight: 50;
+  margin-left: 4%;
+}
+
+.secondcontent {
+  margin-top: 20%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.lang {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-left: 5%;
+}
+
+.langs {
+  font-size: 0.75rem;
+  font-weight: 200;
+  padding-left: 2rem;
+  color: #11F8C2;
+}
+
+.projects {
+  background-color: #11F8C2;
+  border: none;
+  border-radius: 0.2em;
+  width: 17%;
+  height: 5vw;
+  font-size: 0.75rem;
+  margin-top: 35%;
+  align-self: center;
+  color: #000020 !important;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.projects:hover {
+  background-color: #0fd9ac;
+  transform: scale(1.5);
+}
+
+button a {
+  color: #000020 !important;
+}
+
+.bglogo {
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  z-index: -99;
+  top: 16%;
+  right: 0%;
+  background-image: url("logo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: fadeIn 2s forwards;
+}
+
+.close {
+  font-size: 1.5em;
+  position: absolute;
+  top: 0.5%;
+  right: 1%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 55%;
+  position: absolute;
+  top: 4%;
+}
+
+.vs {
+  display: flex;
+}
+
+.vh {
+  display: none;
+}
+
+.dropdown {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  backdrop-filter: blur(10px);
+  background-color: #00002059;
+}
+
+ul li {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  height: 20%;
+  transition: all 0.1s ease-in;
+  font-size: 1.5em;
+}
+
+li:hover {
+  background-color: #FFFFFF03;
+  font-size: 2rem;
+  box-shadow: 0px 0px 10px #212121;
+}
+
+a {
+  text-decoration: none;
+  color: #CCCCCC;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #11F8C2;
+}
+
+.header {
+  position: absolute;
+  margin-top: 47vw;
+  left: 4vw;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #11F8C2;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0fd9ac;
+}
